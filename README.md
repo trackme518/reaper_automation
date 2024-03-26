@@ -60,7 +60,7 @@ Below you can see the Reaper DAW interface. On the left and also on the bottom y
 
 All sources are first converted from stereo or mono into 36 spatial audio and sent to ambisonics track. From ambisonics track the audio is rendered into speakers track with aiira decoder and also into headphone track as binaural stereo. 
 
-![](https://lh7-us.googleusercontent.com/DMAnqJwt6rJ5kIG52u_TgfzBneMMz_-NKNBnieY4M_LGgYeQFGC5lwhcQmXbKoPKnmSM_bq6mlZ_j1eQk-IAMXM8GSH5acm1Szh4BE3grsfNrIvRVGf9ZkR7cIiu4alpkD3iIcPRnN9edAFXgDept5s)
+![reaper interface](images/reaper_gui.png)
 
 Screenshot of Reaper interface 1
 
