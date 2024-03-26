@@ -49,6 +49,8 @@ oscP5.send(myMessage, myRemoteLocation); //send message to Reaper DAW
 * trigger custom action (lua script)
 * rename track
 
+Download Processing ![template script](reaperOSC).
+
 ### Lua scripts
 Certain actions can not be achieved with OSC - for example loading or deleting new files during runtime. This can be done with .lua scripts that Reaper can execute. We can call these scripts with OSC.
 Lua scripts can be seen when you open Reaper and click Actions -> See Action list. New window will apear with all action avaliable. Look for lua scripts. You can edit existing scripts by right click -> edit selected action.
