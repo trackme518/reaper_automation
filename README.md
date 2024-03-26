@@ -1,5 +1,5 @@
 # Reaper DAW Automation
-Automation scripts and OSC commands for Reaper DAW. Originally developed for Dresden SyncID Spatial audio container. If you find the repository helphful please give it a star.
+Automation scripts and OSC commands for Reaper DAW. Originally developed for Dresden SyncID Spatial audio container. If you find the repository helpful please give it a star.
 
 ## Introduction
 You can control spatial audio inside HTW container lan either manually by directly controlling Reaper DAW with mouse and keyboard OR you can do that programmatically with Open Sound Protocol (OSC for short). OSC is widely used in the audio industry and its successor to MIDI protocol. OSC ought to be more universal and offer more precision. 
