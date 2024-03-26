@@ -17,6 +17,9 @@ In computer game development it is common to have separate engines for the game 
 6. Make sure the tracks you want to use are not muted and ones you don’t are muted
 7. Press play button if needed (not necessary for microphone / line inputs)
 
+## Spatial Audio
+We are using [IEM Spatial Audio suite](https://plugins.iem.at/) VSTs as a spatial audio engine. For panning over the spherical surface you should use StereoEncoder plugin (direction change only), for panning in 3D space (cartesian coordinates) use RoomEncoder VST. AIIRA decoder will calculate volumes / gains for specific speaker layout. Since the AIIRA decoder is expecting convex shapes we also include virtual speakers to create more or less uniform speaker distribution around the center. These virtual speakers does not exists and they do not produce sound, they are included in the layout to get better sound distribution from the real speakers. You can read more about that at [IEM website](https://plugins.iem.at/docs/allradecoder/).   
+
 ## Video overview of the Reaper DAW
 https://youtu.be/dGiwkbu3KS0
 
