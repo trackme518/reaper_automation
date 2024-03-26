@@ -64,27 +64,23 @@ All sources are first converted from stereo or mono into 36 spatial audio and se
 
 Screenshot of Reaper interface 1
 
-![](https://lh7-us.googleusercontent.com/AEL8K-xXHsE5XknTE05lqMBb3svb3w17HzHWUWnod9zs8HjPFMFofJ7SVaJ4YWdZCRoVWTawhcUX-Wtv2Y5228kZChAiddp4_WRarI3DCmSKqIeRwfbqqS5wG-jqDfv3uWp4wv3zRCEUIkdXXqF3fi0)
+![IEM VST Room Encoder](images/iem_room_encoder.png)
 
-Screenshot of Reaper interface 2
+IEM VST Room Encoder - Stereo and mono sources are converted into 36 channel ambisonics with spatial audio VST called Room encoder - this is what you can adjust to change source or listener position.
 
-![](https://lh7-us.googleusercontent.com/5JAFYh5CTuQa_aSg-V3Lfecm-xU4wXHfH-TOS9eJAqCrkiDh8cuSP_vOeJdb2Zo5uSYWWXEO_0XHNyOaCEpYLnA3Ej3BeBUyOlleveQA2pv3XVaNkbcwicAlW1500Qwt--yf6_tw2JceOx72OJCfRgo)
-
-Stereo and mono sources are converted into 36 channel ambisonics with spatial audio VST called Room encoder - this is what you can adjust to change source or listener position.
-
-![](https://lh7-us.googleusercontent.com/ysvs1T-8bSsOsJXQR2aoKULpO7e4ZDvWGbZzW39MpU0Mp-77iyzTwaBx-qNlo0keK_u5xPdFC18WLZni9koDfRi7GOPr_V2j78idzlW1DciEaLTlUy4N0ODH582mHCvmThXiJ7CiEO113floWwghi_k)
+![AIIRA](images/aiira_decoder.png)
 
 From ambisonics track audio is rendered into speakers with aiira VST decoder. Decoder is set to reflect physical speakers position and cabling order.
 
-![](https://lh7-us.googleusercontent.com/2q2w8EZTazRQgCnI788iujTa-nZMbyvQKjIZTWwPONSUFh8Wfi0i0fegwi5VDz5ZZWx11TxuN-0NTf79AeBEfmVi_y4jrTbtsFgky-RGOnGbT2MOPzYO--lNtBOu6nv8-UncIuEa7ZCExT5R3rbSq1A)
+![binaural decoder](images/binaural_decoder.png)
 
 From ambisonics track audio is rendered into headphones with binaural VST decoder.
 
-![](https://lh7-us.googleusercontent.com/IqVQJum5iR-QPckz4cxdEOwT2JVRRxo3rmQMpXdqOJiZukxueHnLiXbzw8QrEjZHyp6iamkQgrWsoCKbOfGGqg2gKmff0cuJ6g5e92npgToFbzo7W9cisO6CVhsFkUZla871luya7SuttU9d_FmtwKU)
+![reaper send interafce](images/reaper_send.png)
 
 Each source is routed into an ambisonic track…
 
-![](https://lh7-us.googleusercontent.com/fCN11wuMIelcRooaNUWXyH20ZapXYuwYOn3Fu9aOiAUmoDSH3HCq79rtXzYylnwNkHwbVyX0OmOZj6CWgij8mJpO0MiTNJzpOUtmYhU98weCbN418ekMV9uk9Tyh7B11D0VlzOBO1XHh5alKbGom998)
+![reaper send interafce 2](images/reaper_send2.png)
 
 Ambisonics track includes all audio sources…
 
