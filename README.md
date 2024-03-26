@@ -54,6 +54,8 @@ oscP5.send(myMessage, myRemoteLocation); //send message to Reaper DAW
 
 Download Processing [template script](reaperOSC).
 
+Please note that IEM Spatial Audio plugins such as StereoEncoder and RoomEncoder do offer it's own [integrated OSC](https://plugins.iem.at/docs/osc/) control but currently it only allows for a single instance to be controlled because you can not set individual IDs. You can refer to [IEM source code](https://git.iem.at/audioplugins/IEMPluginSuite) and [issue #200](https://git.iem.at/audioplugins/IEMPluginSuite/-/issues/200). This is why we are using Reaper's universal OSC to control the plugins.  
+
 ### Lua scripts
 Certain actions can not be achieved with OSC - for example loading or deleting new files during runtime. This can be done with .lua scripts that Reaper can execute. We can call these scripts with OSC.
 Lua scripts can be seen when you open Reaper and click Actions -> See Action list. New window will apear with all action avaliable. Look for lua scripts. You can edit existing scripts by right click -> edit selected action.
