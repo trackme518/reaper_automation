@@ -7,9 +7,7 @@ NetAddress myRemoteLocation;
 void setup() {
   size(400, 400);
   frameRate(25);
-
   //osc = new OscP5( this, 9999 );
-
   myRemoteLocation = new NetAddress("127.0.0.1", 9999);
 }
 
@@ -38,5 +36,5 @@ void sendQuat() {
 }
 
 void mousePressed() {
-
+  //sendQuat();
 }
