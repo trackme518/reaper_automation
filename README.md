@@ -54,6 +54,10 @@ Certain actions can not be achieved with OSC - for example loading or deleting n
 Lua scripts can be seen when you open Reaper and click Actions -> See Action list. New window will apear with all action avaliable. Look for lua scripts. You can edit existing scripts by right click -> edit selected action.
 There is another problem with .lua script thought - they can not accept any paramteres when called with OSC. We solve this by first call OSC command to change the first track name. We change the name to arbitrary string that contains our parameters. The .lua script will look for the name of first track and parse it to retrieve the parameters. 
 
+![reaper show actions](images/showActions.jpg)
+Show Actions menu
+![reaper edit scripts](images/editActions.jpg)
+Right click to edit existing script
 
 ## DAW overview
 Below you can see the Reaper DAW interface. On the left and also on the bottom you can find all tracks listed. Some tracks represent audio sources (stereo 1-SOURCE to  5-SOURCE), microphone or line inputs of Annubis (mono), general AMBISONICS track and outputs - speakers and headphones track.
