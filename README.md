@@ -49,7 +49,7 @@ oscP5.send(myMessage, myRemoteLocation); //send message to Reaper DAW
 * trigger custom action (lua script)
 * rename track
 
-Download Processing ![template script](reaperOSC).
+Download Processing [template script](reaperOSC).
 
 ### Lua scripts
 Certain actions can not be achieved with OSC - for example loading or deleting new files during runtime. This can be done with .lua scripts that Reaper can execute. We can call these scripts with OSC.
@@ -82,11 +82,11 @@ From ambisonics track audio is rendered into speakers with aiira VST decoder. De
 
 From ambisonics track audio is rendered into headphones with binaural VST decoder.
 
-![reaper send interafce](images/reaper_send.png)
+![reaper send interface](images/reaper_send.png)
 
 Each source is routed into an ambisonic track…
 
-![reaper send interafce 2](images/reaper_send2.png)
+![reaper send interface 2](images/reaper_send2.png)
 
 Ambisonics track includes all audio sources…
 
