@@ -1,0 +1,33 @@
+{
+  "name": "iem-room-encoder-quat",
+  "commands": [
+    {
+      "address": "ypr",
+      "typetag": "fff",
+      "min": [-3.14,-3.14,-3.14],
+      "max": [3.14,3.14,3.14],
+      "commands": [{
+            "address": "/RoomEncoder/sourceX",
+            "typetag": "f",
+            "min": [-15],
+            "max": [15],
+            "index":[0]
+          },
+		  {
+            "address": "/RoomEncoder/sourceY",
+            "typetag": "f",
+            "min": [-15],
+            "max": [15],
+            "index":[1]
+          },
+		  {
+            "address": "/RoomEncoder/sourceZ",
+            "typetag": "f",
+            "min": [-10],
+            "max": [10],
+            "index":[2]
+          }
+		  ]
+    }
+  ]
+}

@@ -122,14 +122,37 @@ void renameTrack(String newname, int trackID) {
 //C:\Users\3D-Audio\AppData\Roaming\REAPER\Scripts
 void loadMediaFile(String filePath, int sourceIndex) {
   //first set path as a name of the track - later that will be red by lua script in reaper and used as a variable
-  renameTrack(filePath,1); //ie "C:/path/to/file.mp3" 
+  renameTrack(filePath, 1); //ie "C:/path/to/file.mp3"
   //volume acts as variable here - it will be used as a index of the track where we should place new media file
-  volume(1, (float)sourceIndex ); 
+  volume(1, (float)sourceIndex );
   //trigger lua script inside reaper to load file based on first track name
   //script will read first track name and volume and use it as path and index variables
-  triggerAction("_RS90361aec4e2b820549ce9f17feb68ac0b293fc22"); 
+  triggerAction("_RS90361aec4e2b820549ce9f17feb68ac0b293fc22");
 }
 //--------------------
+
+
+void sendIEMRoomEncoderReaper(int index, PVector loc) {
+  //send RoomEncoder OSC for universal VST command in Reaper (not IEM integrated)
+  //output range is the knob range inside Reaper VST - this depands on the selected room size
+  
+  //axis are rearranged based on the processing axis order using peasy 3D camera - you might need to test this
+  
+  OscMessage myMessage = new OscMessage("/track/"+(index+2)+"/fx/1/fxparam/8/value");
+  myMessage.add( map(-loc.z, -1, 1, 0.35, 0.65) ); // 2nd and 3rd parameter is min and max range of the input vector
+  oscP5.send(myMessage, myRemoteLocation);
+
+
+  myMessage = new OscMessage("/track/"+(index+2)+"/fx/1/fxparam/9/value");
+  myMessage.add( map(loc.x, -1, 1, 0.35, 0.65) );
+  oscP5.send(myMessage, myRemoteLocation);
+
+
+  myMessage = new OscMessage("/track/"+(index+2)+"/fx/1/fxparam/10/value");
+  myMessage.add( map(loc.y, -1, 1, 0.0, 1.0 ) );
+  oscP5.send(myMessage, myRemoteLocation);
+}
+
 
 void keyPressed() {
   if (key == 'p') {
@@ -145,7 +168,7 @@ void keyPressed() {
   }
 
   if (key == 'a') {
-    loadMediaFile("C:/Users/3D-Audio/Music/sample.mp3",5);
+    loadMediaFile("C:/Users/3D-Audio/Music/sample.mp3", 5);
   }
 }
 
